@@ -1,7 +1,7 @@
 {
-  "name": "workspace-fs-communication",
-  "displayName": "workspace-fs-communication",
-  "description": "Read files from vscode workspace",
+  "name": "roblox-vscode-integration",
+  "displayName": "Roblox VS Code integration",
+  "description": "Roblox VS Code integration",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.110.0"
@@ -14,12 +14,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "workspace-fs-communication.launchServer",
-        "title": "Roblox: Launch server"
+        "command": "roblox-vscode-integration.launchServer",
+        "title": "Roblox Integration: Launch server"
       },
       {
-        "command": "workspace-fs-communication.closeServer",
-        "title": "Roblox: Close server"
+        "command": "roblox-vscode-integration.closeServer",
+        "title": "Roblox Integration: Close server"
       }
     ]
   },

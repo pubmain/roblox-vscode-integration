@@ -9,7 +9,7 @@ const HOST_NAME = "localhost";
 
 let server: http.Server | null;
 export function activate(context: vscode.ExtensionContext) {
-	const launchServerCommand = vscode.commands.registerCommand("workspace-fs-communication.launchServer", () => {
+	const launchServerCommand = vscode.commands.registerCommand("roblox-vscode-integration.launchServer", () => {
 		if (server) {
 			vscode.window.showInformationMessage(`Server is running`);
 			return;
@@ -134,7 +134,7 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	context.subscriptions.push(launchServerCommand);
 
-	const closeServerCommand = vscode.commands.registerCommand("workspace-fs-communication.closeServer", () => {
+	const closeServerCommand = vscode.commands.registerCommand("roblox-vscode-integration.closeServer", () => {
 		if (!server) {
 			vscode.window.showInformationMessage(`Server is not running`);
 			return;
