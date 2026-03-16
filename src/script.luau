@@ -76,17 +76,14 @@ getgenv().isfolder = newcclosure(function(path: string)
 		return IsFolder(path)
 	end
 	path = path:sub(#PATH_PREFIX, -1)
-
 	local Response = request({
 		Url = `http://{HOST_NAME}:{SERVER_PORT}/isfolder`,
 		Method = "POST",
 		Body = path,
 	})
-
 	if not Response.Success then
 		error(Response.Body)
 	end
-
 	return Response.Body == "true"
 end)
 

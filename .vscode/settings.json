@@ -12,6 +12,7 @@
 	"typescript.tsc.autoDetect": "off",
 	"luau-lsp.types.definitionFiles": [
 		"./.vscode/luau.d.luau",
+		"./.vscode/synx.d.luau",
 	],
 	"luau-lsp.sourcemap.autogenerate": false,
 }
