@@ -3,5 +3,5 @@
 read files from vs code idk
 
 ```lua
-loadstring(game:HttpGet("https://github.com/pubmain/roblox-vscode-integration/raw/main/src/script.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pubmain/roblox-vscode-integration/refs/heads/master/src/script.luau"))()
 ```
